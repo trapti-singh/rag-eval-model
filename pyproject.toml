@@ -1,0 +1,21 @@
+[project]
+name = "rag-eval-model"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "chromadb>=1.5.9",
+    "deepeval>=4.2.6",
+    "langchain-chroma>=1.1.0",
+    "langchain-core>=1.6.5",
+    "langchain-huggingface>=1.2.2",
+    "langsmith>=0.14.1",
+    "langchain-openai>=1.6.6",
+    "langchain-text-splitters>=1.1.2",
+    "openai>=3.19.2",
+    "portalocker[win32]>=4.4.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.1.0",
+]

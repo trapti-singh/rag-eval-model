@@ -1,0 +1,5 @@
+.env
+.venv/
+__pycache__/
+.deepeval/
+chroma_store/
