@@ -9,13 +9,14 @@ from deepeval.metrics import (
     ContextualRelevancyMetric,
 )
 
+from src.ollama_llm import OllamaCloudLLM
 from src.rag_pipeline import RagPipeline
 from evals.harness import load_goldens, summarize_by_metric, print_summary
 
 load_dotenv()
 
 GOLDEN_PATH = "goldens/faithfulness_dataset.json"   # reuse the queries
-JUDGE_MODEL = "gpt-4o-mini"
+JUDGE_MODEL = OllamaCloudLLM()
 THRESHOLD = 0.7
 
 
